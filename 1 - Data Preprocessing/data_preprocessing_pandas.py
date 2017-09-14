@@ -8,8 +8,8 @@ import pandas as pd
 
 #Importing datasets
 dataset = pd.read_csv("Data.csv")
-X = dataset[['Country', 'Age', 'Salary']]
-y = dataset['Purchased']
+X = dataset[['Country', 'Age', 'Salary']].values
+y = dataset['Purchased'].values
 
 #Handling missing data
 from sklearn.preprocessing import Imputer
